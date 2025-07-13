@@ -1,0 +1,76 @@
+group 'com.example.oha_sdk_plugin'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext.kotlin_version = '1.9.10'
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.3.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+
+
+android {
+    compileSdk 34
+namespace 'com.example.oha_sdk_plugin'
+    defaultConfig {
+        minSdkVersion 24
+        targetSdkVersion 34
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
+    }
+
+    packagingOptions {
+        resources {
+            excludes += [
+                    "META-INF/LICENSE",
+                    "META-INF/LICENSE.txt",
+                    "META-INF/INDEX.LIST",
+                    "META-INF/DEPENDENCIES",
+                    "META-INF/NOTICE",
+                    "META-INF/NOTICE.txt",
+                    "/META-INF/{AL2.0,LGPL2.1}",
+                    "/META-INF/gradle/incremental.annotation.processors"
+            ]
+        }
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1"
+
+    // Flutter SDK için local maven (AAR) dependency
+    debugImplementation 'com.optimusyazilim.oha_sdk_module:flutter_debug:1.0'
+    // profileImplementation 'com.optimusyazilim.oha_sdk_module:flutter_profile:1.0'
+    // releaseImplementation 'com.optimusyazilim.oha_sdk_module:flutter_release:1.0'
+
+    implementation "androidx.core:core-ktx:1.12.0"
+    implementation "androidx.appcompat:appcompat:1.6.1"
+    implementation "com.google.android.material:material:1.11.0"
+}

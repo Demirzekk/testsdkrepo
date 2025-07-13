@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        maven { url = uri(file("$rootDir/libs/repo")) }
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url "https://storage.googleapis.com/download.flutter.io" }
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven { url = uri(file("$rootDir/libs/repo")) }
+        google()
+        mavenCentral()
+        maven { url "https://storage.googleapis.com/download.flutter.io" }
+    }
+}
+
+rootProject.name = "oha_sdk_plugin"

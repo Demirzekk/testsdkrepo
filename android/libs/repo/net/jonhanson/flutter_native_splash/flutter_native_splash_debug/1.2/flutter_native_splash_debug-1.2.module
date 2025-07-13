@@ -1,0 +1,76 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "net.jonhanson.flutter_native_splash",
+    "module": "flutter_native_splash_debug",
+    "version": "1.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "debugVariantDebugApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_debug",
+          "version": {
+            "requires": "1.0.0-cf7a9d0800f2a5da166dbe0eb9fb2476018269b1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flutter_native_splash_debug-1.2.aar",
+          "url": "flutter_native_splash_debug-1.2.aar",
+          "size": 4376,
+          "sha512": "49fc7d844c8b4de496b6e6424ea1ce5f9e29aa0ca29be72c5f7adf7113300866be8524109dae7c4fe124c8490871662d3ad45047948e772fc07d97a51da96a17",
+          "sha256": "50392bf3db619466c464f1907d3efbf73e38c34df591fbacc1fa963ba3ef4149",
+          "sha1": "efa2fd649535bfc5d7f4e9bcaf277ea16e91e200",
+          "md5": "725b220265fa9c70d2c4b638fa2da6b6"
+        }
+      ]
+    },
+    {
+      "name": "debugVariantDebugRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_debug",
+          "version": {
+            "requires": "1.0.0-cf7a9d0800f2a5da166dbe0eb9fb2476018269b1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flutter_native_splash_debug-1.2.aar",
+          "url": "flutter_native_splash_debug-1.2.aar",
+          "size": 4376,
+          "sha512": "49fc7d844c8b4de496b6e6424ea1ce5f9e29aa0ca29be72c5f7adf7113300866be8524109dae7c4fe124c8490871662d3ad45047948e772fc07d97a51da96a17",
+          "sha256": "50392bf3db619466c464f1907d3efbf73e38c34df591fbacc1fa963ba3ef4149",
+          "sha1": "efa2fd649535bfc5d7f4e9bcaf277ea16e91e200",
+          "md5": "725b220265fa9c70d2c4b638fa2da6b6"
+        }
+      ]
+    }
+  ]
+}

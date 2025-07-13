@@ -1,0 +1,76 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "net.jonhanson.flutter_native_splash",
+    "module": "flutter_native_splash_profile",
+    "version": "1.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "profileVariantProfileApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_profile",
+          "version": {
+            "requires": "1.0.0-cf7a9d0800f2a5da166dbe0eb9fb2476018269b1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flutter_native_splash_profile-1.2.aar",
+          "url": "flutter_native_splash_profile-1.2.aar",
+          "size": 4231,
+          "sha512": "0ffa8f65dcaf3e73fed69b1b45fc4a1865e36c1b29d6615e070c26ed9f13e2e6345e7c9933bd0a7ffd38a0732d7ffda9659ef5b046139fa2dbd038fad87576cd",
+          "sha256": "cda65c29bfbd9fe2081dd5f27ceed7880e7696f48af44663c73fc0118972b82f",
+          "sha1": "c742e272222adfb0fb3e3118c57d2905de94af7b",
+          "md5": "0f9d32ba7f46451cbdef21e06c2b01ff"
+        }
+      ]
+    },
+    {
+      "name": "profileVariantProfileRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_profile",
+          "version": {
+            "requires": "1.0.0-cf7a9d0800f2a5da166dbe0eb9fb2476018269b1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flutter_native_splash_profile-1.2.aar",
+          "url": "flutter_native_splash_profile-1.2.aar",
+          "size": 4231,
+          "sha512": "0ffa8f65dcaf3e73fed69b1b45fc4a1865e36c1b29d6615e070c26ed9f13e2e6345e7c9933bd0a7ffd38a0732d7ffda9659ef5b046139fa2dbd038fad87576cd",
+          "sha256": "cda65c29bfbd9fe2081dd5f27ceed7880e7696f48af44663c73fc0118972b82f",
+          "sha1": "c742e272222adfb0fb3e3118c57d2905de94af7b",
+          "md5": "0f9d32ba7f46451cbdef21e06c2b01ff"
+        }
+      ]
+    }
+  ]
+}
